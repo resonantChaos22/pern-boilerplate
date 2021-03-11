@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Person from "./Person";
 
 const PeopleList = ({ people }) => {
-  console.log(people);
   return (
     <div>
       {people.map((person) => (

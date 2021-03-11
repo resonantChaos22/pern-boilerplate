@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { addPerson } from "../../actions/people-actions";
+// import { addPerson } from "../../actions/people-actions";
+import { addPerson } from "../../redux/actions/people";
 import PeopleList from "./PeopleList";
 import PersonInput from "./PersonInput";
 
@@ -16,7 +17,6 @@ class PeopleContainer extends Component {
 
   render() {
     const { people } = this.props;
-    console.log(this.state);
     return (
       <div>
         <PersonInput addPerson={this.props.addPerson} />
